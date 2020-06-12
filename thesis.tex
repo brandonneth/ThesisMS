@@ -1,0 +1,99 @@
+\documentclass{report}
+
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{balance}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{subcaption}
+
+\lstset{ %
+language=C++,                % choose the language of the code
+basicstyle=\ttfamily\footnotesize,       % the size of the fonts that are used for the code
+columns=fullflexible,
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it is 1 each line will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+%backgroundcolor=\color{codeBG3},  % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,           % adds a frame around the code
+tabsize=2,          % sets default tabsize to 2 spaces
+captionpos=b,           % sets the caption-position to bottom
+breaklines=true,        % sets automatic line breaking
+breakatwhitespace=false,    % sets if automatic breaks should only happen at whitespace
+escapeinside={(*}{*)},          % if you want to add a comment within your code
+keywordstyle=\color{blue},       % keyword style
+  %language=Octave,                 % the language of the code
+  otherkeywords={SearchVar,MV,TSS,tileExpr,Search,tFunc...},           % if you want to add more keywords to the set
+  numberstyle=\tiny\color{black}, % the style that is used for the line-numbers
+  rulecolor=\color{black},
+  escapechar=|
+}
+
+\newcommand{\todo}[1]{{\textcolor{red}{{\tt{TODO:}}\,\,#1 }}}
+\newcommand{\an}[1]{{\textcolor{blue}{Author's Note: #1}}}
+\newcommand{\ttt}[1]{{\texttt{#1}}}
+
+
+\title{Thesis Title}
+
+\author{Brandon Neth}
+
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction}
+
+
+
+\chapter{Related Work}
+
+
+\todo{RAJA}
+
+\todo{CARE}
+
+\todo{Kokkos}
+
+\todo{Loop chain}
+
+
+\todo{Original dependence vector stuff}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Using RAJA}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Loop Chains}
+
+\todo{Discussion of loop chains and how the transformations affect things mathematically}
+
+
+\chapter{Loop Chains in RAJA: RAJALC}
+
+\todo{Discussion of how loop chains are incorporated into RAJA}
+
+
+\chapter{Evaluation}
+
+\section{Case Study: Porting LULESH}
+
+\todo{Port LULESH to use RAJALC}
+
+\section{Performance}
+
+
+\chapter{Conclusion}
+
+\end{document}
